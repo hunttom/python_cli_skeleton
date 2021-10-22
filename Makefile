@@ -12,7 +12,7 @@ install:
 	pip3 install -e .
 
 uninstall:
-	pip3 uninstall cli_setup -y
+	pip3 uninstall cli_skeleton -y
 
 # venv is a shortcut target
 venv: $(VENV)/bin/activate
@@ -21,8 +21,9 @@ run: venv
 	#./$(VENV)/bin/python3 app.py
 	cli_skeleton
 
+# Example test to run
 test: install
-# 	cli_skeleton --help # Example test to run
+	cli_skeleton
 
 clean:
 	rm -rf $(VENV)
