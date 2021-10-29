@@ -17,10 +17,6 @@ uninstall:
 # venv is a shortcut target
 venv: $(VENV)/bin/activate
 
-run: venv
-	#./$(VENV)/bin/python3 app.py
-	cli_skeleton
-
 # Example test to run
 test: install
 	cli_skeleton
